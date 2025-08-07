@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - 國立台灣海洋大學馬來西亞校友會</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="ntoulogo.gif">
+    <link rel="icon" type="image/png" sizes="32x32" href="ntoulogo.gif">
+    <link rel="icon" type="image/png" sizes="16x16" href="ntoulogo.gif">
+    <link rel="apple-touch-icon" sizes="180x180" href="ntoulogo.gif">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="simple-styles.css">
+    
+    <style>
+        .login-container {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .login-card {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.95);
+            border: none;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+        
+        .login-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 15px 15px 0 0;
+        }
+        
+        .form-control:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+        }
+        
+        .btn-login {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            transition: transform 0.3s ease;
+        }
+        
+        .btn-login:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 15px rgba(102, 126, 234, 0.3);
+        }
+        
+        .social-login-btn {
+            transition: transform 0.3s ease;
+        }
+        
+        .social-login-btn:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Navbar will be loaded dynamically -->
+    </header>
+
+    <main class="login-container d-flex align-items-center" style="padding-top: 76px;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-5 col-md-7 col-sm-9">
+                    <div class="card login-card border-0 rounded-4">
+                        <div class="login-header text-center py-4">
+                            <div class="mb-3">
+                                <img src="ntoulogo.gif" alt="NTOU Logo" style="height: 60px; width: auto;">
+                            </div>
+                            <h3 class="mb-1">Welcome Back</h3>
+                            <p class="mb-0">Sign in to your alumni account</p>
+                        </div>
+                        
+                        <div class="card-body p-5">
+                            <form id="loginForm">
+                                <div class="mb-4">
+                                    <label for="email" class="form-label fw-semibold">Email Address</label>
+                                    <input type="email" class="form-control form-control-lg" id="email" placeholder="Enter your email" required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid email address.
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <label for="password" class="form-label fw-semibold">Password</label>
+                                    <div class="input-group">
+                                        <input type="password" class="form-control form-control-lg" id="password" placeholder="Enter your password" required>
+                                        <button class="btn btn-outline-secondary" type="button" id="togglePassword">
+                                            <span id="eyeIcon">👁️</span>
+                                        </button>
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        Please enter your password.
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-4 d-flex justify-content-between align-items-center">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="rememberMe">
+                                        <label class="form-check-label" for="rememberMe">
+                                            Remember me
+                                        </label>
+                                    </div>
+                                    <a href="forgot-password.html" class="text-decoration-none">Forgot Password?</a>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-login btn-lg w-100 text-white mb-4">
+                                    Sign In
+                                </button>
+                            </form>
+                            
+                            <div class="text-center mb-4">
+                                <div class="d-flex align-items-center">
+                                    <hr class="flex-grow-1">
+                                    <span class="px-3 text-muted">or continue with</span>
+                                    <hr class="flex-grow-1">
+                                </div>
+                            </div>
+                            
+                            <div class="row g-2 mb-4">
+                                <div class="col-6">
+                                    <button class="btn btn-outline-danger social-login-btn w-100" type="button">
+                                        <span class="me-2">📧</span>Google
+                                    </button>
+                                </div>
+                                <div class="col-6">
+                                    <button class="btn btn-outline-primary social-login-btn w-100" type="button">
+                                        <span class="me-2">📘</span>Facebook
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="text-center">
+                                <p class="mb-0">Don't have an account? <a href="register.html" class="text-decoration-none fw-semibold">Sign up here</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Benefits of Logging In -->
+                    <div class="card mt-4 bg-white bg-opacity-90 border-0 rounded-4">
+                        <div class="card-body p-4">
+                            <h6 class="card-title text-center mb-3">Benefits of Having an Account</h6>
+                            <div class="row g-3">
+                                <div class="col-6">
+                                    <div class="text-center">
+                                        <div class="text-primary mb-2" style="font-size: 1.5rem;">🤝</div>
+                                        <small class="text-muted">Connect with Alumni</small>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="text-center">
+                                        <div class="text-success mb-2" style="font-size: 1.5rem;">📅</div>
+                                        <small class="text-muted">Event Registration</small>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="text-center">
+                                        <div class="text-warning mb-2" style="font-size: 1.5rem;">💼</div>
+                                        <small class="text-muted">Job Opportunities</small>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="text-center">
+                                        <div class="text-info mb-2" style="font-size: 1.5rem;">📰</div>
+                                        <small class="text-muted">Exclusive Updates</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="simple-script.js"></script>
+    
+    <script>
+        // Login form functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const loginForm = document.getElementById('loginForm');
+            const togglePassword = document.getElementById('togglePassword');
+            const passwordInput = document.getElementById('password');
+            const eyeIcon = document.getElementById('eyeIcon');
+            
+            // Toggle password visibility
+            togglePassword.addEventListener('click', function() {
+                const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+                passwordInput.setAttribute('type', type);
+                eyeIcon.textContent = type === 'password' ? '👁️' : '🙈';
+            });
+            
+            // Form validation and submission
+            loginForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const email = document.getElementById('email');
+                const password = document.getElementById('password');
+                
+                // Reset previous validation states
+                loginForm.classList.remove('was-validated');
+                email.classList.remove('is-invalid');
+                password.classList.remove('is-invalid');
+                
+                let isValid = true;
+                
+                // Email validation
+                if (!email.value || !validateEmail(email.value)) {
+                    email.classList.add('is-invalid');
+                    isValid = false;
+                }
+                
+                // Password validation
+                if (!password.value || password.value.length < 6) {
+                    password.classList.add('is-invalid');
+                    const feedback = password.parentElement.nextElementSibling;
+                    feedback.textContent = password.value.length === 0 ? 
+                        'Please enter your password.' : 
+                        'Password must be at least 6 characters long.';
+                    isValid = false;
+                }
+                
+                if (isValid) {
+                    // Show loading state
+                    const submitBtn = loginForm.querySelector('button[type="submit"]');
+                    const originalText = submitBtn.textContent;
+                    submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Signing In...';
+                    submitBtn.disabled = true;
+                    
+                    // Simulate login process
+                    setTimeout(() => {
+                        alert('Login successful! Welcome back to NTOU Alumni Network.');
+                        // In a real application, you would redirect to the dashboard
+                        window.location.href = 'simple-index.html';
+                    }, 2000);
+                } else {
+                    loginForm.classList.add('was-validated');
+                }
+            });
+            
+            // Social login buttons
+            const socialButtons = document.querySelectorAll('.social-login-btn');
+            socialButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const provider = this.textContent.trim();
+                    alert(`${provider} login integration would be implemented here.`);
+                });
+            });
+            
+            // Email validation helper function
+            function validateEmail(email) {
+                const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return re.test(email);
+            }
+            
+            // Demo credentials helper
+            const emailInput = document.getElementById('email');
+            const passwordInput = document.getElementById('password');
+            
+            // Add demo credentials hint
+            const demoHint = document.createElement('div');
+            demoHint.innerHTML = `
+                <div class="alert alert-info mt-3" role="alert">
+                    <small><strong>Demo:</strong> Use any email and password (min 6 chars) to test login</small>
+                </div>
+            `;
+            loginForm.parentElement.appendChild(demoHint);
+        });
+    </script>
+</body>
+</html>

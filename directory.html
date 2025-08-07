@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory - 國立台灣海洋大學馬來西亞校友會</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="ntoulogo.gif">
+    <link rel="icon" type="image/png" sizes="32x32" href="ntoulogo.gif">
+    <link rel="icon" type="image/png" sizes="16x16" href="ntoulogo.gif">
+    <link rel="apple-touch-icon" sizes="180x180" href="ntoulogo.gif">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="simple-styles.css">
+</head>
+<body>
+    <header>
+        <!-- Navbar will be loaded dynamically -->
+    </header>
+
+    <main style="padding-top: 76px;">
+        <!-- Hero Section -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h1 class="display-4 fw-bold text-dark mb-4">Alumni Directory</h1>
+                        <p class="lead text-muted">Connect with fellow alumni from around the world. Search by graduation year, industry, or location.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search Section -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-8">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body p-4">
+                                <h4 class="card-title text-center mb-4">Search Alumni</h4>
+                                <form>
+                                    <div class="row g-3">
+                                        <div class="col-md-4">
+                                            <label for="name" class="form-label">Name</label>
+                                            <input type="text" class="form-control" id="name" placeholder="Enter name">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="graduationYear" class="form-label">Graduation Year</label>
+                                            <select class="form-select" id="graduationYear">
+                                                <option selected>All Years</option>
+                                                <option value="2023">2023</option>
+                                                <option value="2022">2022</option>
+                                                <option value="2021">2021</option>
+                                                <option value="2020">2020</option>
+                                                <option value="2019">2019</option>
+                                                <option value="older">Before 2019</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="industry" class="form-label">Industry</label>
+                                            <select class="form-select" id="industry">
+                                                <option selected>All Industries</option>
+                                                <option value="technology">Technology</option>
+                                                <option value="engineering">Engineering</option>
+                                                <option value="business">Business</option>
+                                                <option value="education">Education</option>
+                                                <option value="healthcare">Healthcare</option>
+                                                <option value="finance">Finance</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="location" class="form-label">Location</label>
+                                            <select class="form-select" id="location">
+                                                <option selected>All Locations</option>
+                                                <option value="malaysia">Malaysia</option>
+                                                <option value="taiwan">Taiwan</option>
+                                                <option value="singapore">Singapore</option>
+                                                <option value="usa">United States</option>
+                                                <option value="other">Other</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6 d-flex align-items-end">
+                                            <button type="submit" class="btn btn-primary w-100">Search</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Alumni -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Featured Alumni</h2>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body text-center p-4">
+                                <div class="bg-primary text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px; font-size: 2rem;">👨‍💼</div>
+                                <h5 class="card-title">Dr. Chen Wei Ming</h5>
+                                <p class="text-muted mb-2">CEO, Ocean Tech Solutions</p>
+                                <p class="text-muted small mb-3">Class of 1995 | Kuala Lumpur, Malaysia</p>
+                                <p class="card-text">Leading expert in marine technology and sustainable ocean solutions.</p>
+                                <button class="btn btn-outline-primary btn-sm">Connect</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body text-center p-4">
+                                <div class="bg-success text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px; font-size: 2rem;">👩‍🔬</div>
+                                <h5 class="card-title">Prof. Lisa Tan</h5>
+                                <p class="text-muted mb-2">Research Director, Marine Biology Institute</p>
+                                <p class="text-muted small mb-3">Class of 2001 | Singapore</p>
+                                <p class="card-text">Renowned marine biologist specializing in coral reef conservation.</p>
+                                <button class="btn btn-outline-success btn-sm">Connect</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body text-center p-4">
+                                <div class="bg-warning text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px; font-size: 2rem;">👨‍🏫</div>
+                                <h5 class="card-title">Mr. Ahmad Rahman</h5>
+                                <p class="text-muted mb-2">Principal Engineer, Maritime Port Authority</p>
+                                <p class="text-muted small mb-3">Class of 2008 | Johor, Malaysia</p>
+                                <p class="card-text">Expert in port operations and maritime logistics systems.</p>
+                                <button class="btn btn-outline-warning btn-sm">Connect</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Directory Statistics -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Directory Statistics</h2>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card border-0 shadow-sm text-center">
+                            <div class="card-body p-4">
+                                <div class="display-4 text-primary fw-bold">2,847</div>
+                                <h5 class="card-title mt-2">Total Alumni</h5>
+                                <p class="text-muted">Registered members worldwide</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card border-0 shadow-sm text-center">
+                            <div class="card-body p-4">
+                                <div class="display-4 text-success fw-bold">15</div>
+                                <h5 class="card-title mt-2">Countries</h5>
+                                <p class="text-muted">Alumni presence globally</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card border-0 shadow-sm text-center">
+                            <div class="card-body p-4">
+                                <div class="display-4 text-warning fw-bold">642</div>
+                                <h5 class="card-title mt-2">Malaysia</h5>
+                                <p class="text-muted">Alumni in Malaysia</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card border-0 shadow-sm text-center">
+                            <div class="card-body p-4">
+                                <div class="display-4 text-info fw-bold">89%</div>
+                                <h5 class="card-title mt-2">Active Rate</h5>
+                                <p class="text-muted">Engagement in alumni activities</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Join Directory CTA -->
+        <section class="py-5 bg-primary text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="mb-4">Join Our Alumni Directory</h2>
+                        <p class="lead mb-4">Connect with fellow graduates, expand your professional network, and stay updated with alumni activities.</p>
+                        <a href="#signup" class="btn btn-light btn-lg">Register Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">國立台灣海洋大學馬來西亞校友會</h5>
+                    <p class="text-light mb-3">Connecting graduates worldwide and fostering lifelong relationships within our community.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white fs-4">📘</a>
+                        <a href="#" class="text-white fs-4">🐦</a>
+                        <a href="#" class="text-white fs-4">💼</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-semibold mb-3 text-uppercase">Community</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="directory.html" class="text-light text-decoration-none">Directory</a></li>
+                        <li class="mb-2"><a href="events.html" class="text-light text-decoration-none">Events</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Mentorship</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Volunteer</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-semibold mb-3 text-uppercase">Resources</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Career Center</a></li>
+                        <li class="mb-2"><a href="news.html" class="text-light text-decoration-none">News & Updates</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Alumni Magazine</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Giving Back</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-semibold mb-3 text-uppercase">Support</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Help Center</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-light text-decoration-none">Contact Us</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="my-4 bg-secondary">
+            <div class="text-center">
+                <p class="mb-0 text-light">&copy; 2024 國立台灣海洋大學馬來西亞校友會. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="simple-script.js"></script>
+</body>
+</html>

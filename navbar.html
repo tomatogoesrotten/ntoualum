@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Test - 國立台灣海洋大學馬來西亞校友會</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="ntoulogo.gif">
+    <link rel="icon" type="image/png" sizes="32x32" href="ntoulogo.gif">
+    <link rel="icon" type="image/png" sizes="16x16" href="ntoulogo.gif">
+    <link rel="apple-touch-icon" sizes="180x180" href="ntoulogo.gif">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="simple-styles.css">
+</head>
+<body>
+    <header>
+        <!-- Navbar will be loaded dynamically -->
+    </header>
+
+    <main style="padding-top: 76px;">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow-sm">
+                        <div class="card-body p-5 text-center">
+                            <h1 class="display-4 mb-4">Navbar Test Page</h1>
+                            <p class="lead text-muted mb-4">This page is used to test the navbar component. The navbar should be loaded dynamically via JavaScript.</p>
+                            
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="card bg-light">
+                                        <div class="card-body">
+                                            <h5 class="card-title">✅ Bootstrap CSS</h5>
+                                            <p class="card-text small">Bootstrap styles are loaded and working</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card bg-light">
+                                        <div class="card-body">
+                                            <h5 class="card-title">✅ Custom CSS</h5>
+                                            <p class="card-text small">Custom styles from simple-styles.css are loaded</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card bg-light">
+                                        <div class="card-body">
+                                            <h5 class="card-title">✅ JavaScript</h5>
+                                            <p class="card-text small">simple-script.js loads the navbar dynamically</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card bg-light">
+                                        <div class="card-body">
+                                            <h5 class="card-title">✅ Responsive</h5>
+                                            <p class="card-text small">Navbar collapses on mobile devices</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-4">
+                                <h5>Navigation Links:</h5>
+                                <div class="d-flex flex-wrap justify-content-center gap-2 mt-3">
+                                    <a href="simple-index.html" class="btn btn-outline-primary btn-sm">Home</a>
+                                    <a href="events.html" class="btn btn-outline-primary btn-sm">Events</a>
+                                    <a href="directory.html" class="btn btn-outline-primary btn-sm">Directory</a>
+                                    <a href="news.html" class="btn btn-outline-primary btn-sm">News</a>
+                                    <a href="contact.html" class="btn btn-outline-primary btn-sm">Contact</a>
+                                    <a href="login.html" class="btn btn-outline-success btn-sm">Login</a>
+                                    <a href="register.html" class="btn btn-success btn-sm">Register</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2024 國立台灣海洋大學馬來西亞校友會. Navbar Test Page.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="simple-script.js"></script>
+    
+    <script>
+        // Additional test script
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Navbar test page loaded successfully!');
+            
+            // Check if navbar was loaded
+            setTimeout(() => {
+                const navbar = document.querySelector('.navbar');
+                if (navbar) {
+                    console.log('✅ Navbar loaded successfully!');
+                } else {
+                    console.error('❌ Navbar failed to load!');
+                }
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

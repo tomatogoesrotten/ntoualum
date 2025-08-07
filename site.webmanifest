@@ -1,0 +1,21 @@
+{
+    "name": "國立台灣海洋大學馬來西亞校友會",
+    "short_name": "NTOU Alumni",
+    "description": "National Taiwan Ocean University Malaysia Alumni Association",
+    "icons": [
+        {
+            "src": "ntoulogo.gif",
+            "sizes": "192x192",
+            "type": "image/gif"
+        },
+        {
+            "src": "ntoulogo.gif",
+            "sizes": "512x512",
+            "type": "image/gif"
+        }
+    ],
+    "theme_color": "#0d6efd",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "start_url": "/"
+}
