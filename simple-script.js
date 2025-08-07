@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return `
         <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
             <div class="container">
-                <a class="navbar-brand fw-bold text-primary fs-4 d-flex align-items-center" href="simple-index.html">
+                <a class="navbar-brand fw-bold text-primary fs-4 d-flex align-items-center" href="index.html">
                     <img src="ntoulogo.gif" alt="NTOU Logo" class="me-2" style="height: 40px; width: auto;">
                     <span class="d-none d-sm-inline">國立台灣海洋大學馬來西亞校友會</span>
                     <span class="d-sm-none">NTOU Alumni</span>
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="simple-index.html" data-page="home">Home</a>
+                            <a class="nav-link" href="index.html" data-page="home">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="events.html" data-page="events">Events</a>
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
         navLinks.forEach(link => link.classList.remove('active'));
         
         // Add active class to current page
-        if (currentPage === 'simple-index.html' || currentPage === '' || currentPage === 'index.html') {
+        if (currentPage === 'index.html' || currentPage === '' || currentPage === 'index.html') {
             document.querySelector('.nav-link[data-page="home"]')?.classList.add('active');
         } else if (currentPage === 'events.html') {
             document.querySelector('.nav-link[data-page="events"]')?.classList.add('active');
